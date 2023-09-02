@@ -1,12 +1,12 @@
 {
   "required":true,
   "minVersion":"0.8",
-  "package":"com.github.andreybali.autorespawn.mixin",
+  "package":"com.github.andreybali.simpleBright.mixin",
   "compatibilityLevel":"JAVA_17",
   "mixins":[
   ],
   "client":[
-    "DeathScreenMixin"
+    "LightmapTextureManagerMixin"
   ],
   "injectors":{
     "defaultRequire":1
