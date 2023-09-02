@@ -1,8 +1,8 @@
 {
   "schemaVersion":1,
-  "id":"simple-bright",
+  "id":"simple-auto-respawn",
   "version":"${version}",
-  "name":"simpleBright",
+  "name":"Simple auto respawn",
   "description":"",
   "authors":[],
   "contact":{},
@@ -10,14 +10,14 @@
   "environment":"client",
   "entrypoints":{
     "client": [
-      "com.github.andreybali.simpleBright.Main"
+      "com.github.andreybali.autorespawn.Main"
     ],
     "modmenu": [
-      "com.github.andreybali.simpleBright.ModMenuIntegration"
+      "com.github.andreybali.autorespawn.ModMenuIntegration"
     ]
   },
   "mixins":[
-    "simpleBright.mixins.json"
+    "simpleAutoRespawn.mixins.json"
   ],
   "depends":{
     "fabricloader":">=${loader_version}",

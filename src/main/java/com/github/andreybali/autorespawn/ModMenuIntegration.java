@@ -1,4 +1,4 @@
-package com.github.andreybali.simpleBright;
+package com.github.andreybali.autorespawn;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;

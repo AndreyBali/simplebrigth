@@ -1,4 +1,4 @@
-package com.github.andreybali.simpleBright;
+package com.github.andreybali.autorespawn;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigData;
@@ -6,7 +6,7 @@ import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 
-@Config(name = "simpleBright")
+@Config(name = "autoRespawn")
 public class ModConfig implements ConfigData {
     @ConfigEntry.Gui.Excluded
     public static ModConfig INSTANCE;
@@ -15,6 +15,5 @@ public class ModConfig implements ConfigData {
         AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new);
         INSTANCE = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
     }
-    @ConfigEntry.BoundedDiscrete(min = 1, max = 3)
-    public float brightLevel = 1.5f;
+    public boolean autoRespawn = true;
 }
